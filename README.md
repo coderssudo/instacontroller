@@ -3,7 +3,7 @@ This is just a simple fun desktop application...
 It has some feature which can control Instagram webpage
 
 ### Modules Used
-Selenium
+Selenium,
 Tkinter
 
 ## Browser
@@ -17,15 +17,15 @@ is less chance of change in basic structure of website
 ## Error Handling
 Althouth this app is running smoothly but 
 #### It can give error due to
-Network problem
+Network problem,
 performing task beyond app reach
 
 ## Features
 #### It has several features like
-Login
-Search
-Read Notification
-Pic Open
-Like 
-Save 
+Login,
+Search,
+Read Notification,
+Pic Open,
+Like ,
+Save ,
 Logout
