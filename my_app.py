@@ -1,10 +1,10 @@
-
-
 import tkinter as tk
 from inta_tools import *
 import time
 from PIL import ImageTk, Image
-time.sleep(1)
+
+
+# creating our app first window to show
 
 insta = tk.Tk(className='Insta')
 insta_img = ImageTk.PhotoImage(Image.open('/home/rai/Downloads/myicon.png'))
@@ -15,7 +15,8 @@ my_icon.grid(row = "0", column = "0")
 frame1 = tk.Frame(insta)
 frame1.grid(row = "0", column = "1", padx = 10, pady=10)
 
-
+# this function calls the pic_open function from insta_tools
+# it creates a frame and some widgets in the app window
 def open_pic1():
     pic_open()
 
@@ -51,8 +52,10 @@ def open_pic1():
 
     back_button = tk.Button(frame4, text='Back', command=int_opt)
     back_button.grid(row="1", column="1")
+    
 
-
+# this function calls the search function from insta_tools
+# it creates a frame and some widgets in the app window
 def ser():
     frame2 = tk.Frame(insta, padx=50, pady=50)
     frame2.grid(row="0", column="1")
@@ -88,7 +91,8 @@ def ser():
     back_button = tk.Button(frame4, text='Back', command=int_opt)
     back_button.grid(row="0", column="0")
 
-
+# this function calls the logout function from insta_tools
+# it creates a frame and back button in the app window
 def log_out():
     logout()
 
@@ -105,7 +109,8 @@ def log_out():
     back_button = tk.Button(frame2, text='Back', command=int_opt)
     back_button.grid(row="1", column="0")
 
-
+# this function calls the first_five_not function from insta_tools
+# it creates a frame and display notification of the account in the app window
 def read():
     insta.geometry("400x400+300+300")
     insta.resizable(width=False, height=False)
@@ -142,6 +147,7 @@ def read():
     back_button.grid(row="6", column="0")
 
 
+# it creates a frame and some widgets to perform task on account in the app window
 def option():
     insta.geometry("400x200+300+300")
     insta.resizable(width=False, height=False)
@@ -175,7 +181,8 @@ def option():
     read_button = tk.Button(frame2, text='Read Notification', command=int_read)
     read_button.grid(row="3", column="0")
 
-
+# this function calls the login function from insta_tools
+# it creates a frame and a login form to login into account in the app window
 def log():
     insta.geometry("400x200+300+300")
     insta.resizable(width=False, height=False)
@@ -214,6 +221,10 @@ def log():
     return user
 
 
+# the very first button appears on the app window
+# it opens the browser
+#  this function calls the brow function from insta_tools
+
 def brow_but():
     def int_brow():
         frame1.destroy()
@@ -226,4 +237,5 @@ def brow_but():
 
 brow_but()
 
+# the main loop tkinter which runs to show your app
 insta.mainloop()
