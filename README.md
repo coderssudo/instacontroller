@@ -1,16 +1,31 @@
 # instacontroller
-this is just a fun project to play
+This is just a simple fun desktop application...
+It has some feature which can control Instagram webpage
 
-#Browser
-When Browser opens make sure it should be maximized 
-although you can minimise it but the window should remain in full size
+### Modules Used
+Selenium
+Tkinter
 
-#XML path
-the XML path can be change 
-mostly it remains same as there is less chance of change in basic structure of website
+## Browser
+When Browser opens make sure it should be maximized although
+you can minimise it but the window should remain in full size
 
-#Error Handling
-Althouth this app is running smoothly
-but it can give error due to
+## XML path
+the XML path can be change ,mostly it remains same as there 
+is less chance of change in basic structure of website
+
+## Error Handling
+Althouth this app is running smoothly but 
+#### It can give error due to
 Network problem
 performing task beyond app reach
+
+## Features
+#### It has several features like
+Login
+Search
+Read Notification
+Pic Open
+Like 
+Save 
+Logout
